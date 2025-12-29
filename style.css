@@ -1,0 +1,92 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+body{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+.container{
+    min-height: 45vh;
+    width: 40vh;
+    padding:2rem;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #262626;
+}
+form{
+    margin: 2rem 0 1rem 0;
+}
+form select,button,input{
+    width:100%;
+    border-radius:0.40rem;
+    border:none;
+    outline:none;
+}
+p{
+    color:white;
+}
+h2{
+    color:white;
+}
+form input{
+    border:1px solid black;
+    height:1.2rem;
+    padding-left:5px;
+    margin:5px;
+}
+.dropdown{
+    display:flex;
+    padding:22px;
+    justify-content: space-between;
+    align-items:center;
+}
+.msg{
+    color:white;
+    display:flex;
+    justify-content: center;
+    margin-top:2rem;
+}
+/*glowing animation*/
+.container {
+  position: relative;
+  background: #1A1A1A;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* The moving light beam */
+.container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+ background: conic-gradient(
+    transparent, 
+    #00F0FF, 
+    #7000FF,
+    transparent 50%
+);
+  animation: rotate 4s linear infinite;
+  z-index: -2;
+}
+
+/* The inner box covering the center of the light */
+.container::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #1A1A1A;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+@keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
