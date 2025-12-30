@@ -10,6 +10,7 @@ body{
     align-items: center;
     background-color: #000000;
 }
+
 .container{
     min-height: 45vh;
     width: 40vh;
@@ -53,9 +54,15 @@ form select{
     height: 2.2rem;
     cursor: pointer;
 }
+form .select-container select{
+    width: 68px;
+}
+.select-container{
+    margin:28px;
+}
 .dropdown{
     display:flex;
-    padding:22px;
+    padding:10px;
     justify-content: space-between;
     align-items:center;
 }
