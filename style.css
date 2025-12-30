@@ -27,17 +27,31 @@ form select,button,input{
     border:none;
     outline:none;
 }
+.amountpara{
+    padding-left:10px;
+    font-weight: bold;
+    
+}
 p{
     color:white;
 }
 h2{
     color:white;
+    text-align: center;
 }
 form input{
     border:1px solid black;
-    height:1.2rem;
-    padding-left:5px;
+    height:2.2rem;
+    padding-left:10px;
     margin:5px;
+}
+form button{
+    height: 2.2rem;
+    cursor: pointer;
+}
+form select{
+    height: 2.2rem;
+    cursor: pointer;
 }
 .dropdown{
     display:flex;
@@ -49,7 +63,15 @@ form input{
     color:white;
     display:flex;
     justify-content: center;
-    margin-top:2rem;
+    align-items: center;
+    background-color: #222222;
+    height: 2rem;
+    border-radius: 42px;
+    padding:0.70rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    margin-left:1rem;
+    margin-right: 1rem;
 }
 /*glowing animation*/
 .container {
