@@ -22,38 +22,20 @@
             <div class="dropdown">
                 <div class="select-container">
                     <p>From</p>
-                <img src="https://flagsapi.com/US/flat/64.png" alt="Countryflag">
-                <div class="from">
-                    <select name="from">
-                        <option value="USD" selected>USD</option>
-                        <option value="INR">INR</option>
-                        <option value="AUD">AUD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="CAD">CAD</option>
-                        <option value="CNY">CNY</option>
-                    </select>
-                </div>
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="Countryflag">
+                    <select class="from" name="from"></select>
                 </div>
                 <i class="fa-solid fa-arrow-right-arrow-left" style="color:white"></i>
                 <div class="select-container">
                     <p>To</p>
-                <img src="https://flagsapi.com/IN/flat/64.png" alt="Countryflag">
-                <div class="to">
-                    <select name="to">
-                        <option value="INR" selected>INR</option>
-                        <option value="USD">USD</option>
-                        <option value="AUD">AUD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="CAD">CAD</option>
-                        <option value="CNY">CNY</option>
-                    </select>
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt="Countryflag">
+                        <select class="to" name="to"></select>
                 </div>
             </div>
+            <div class="msg">
+                1 USD = 90 INR
             </div>
-                <div class="msg">
-                    1 USD = 90 INR
-                </div>
-                <button>Get Exchange Rate</button>
+            <button>Get Exchange Rate</button>
         </form>
     </div>
     <script src="country.js"></script>
